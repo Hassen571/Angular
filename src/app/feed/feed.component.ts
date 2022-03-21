@@ -21,7 +21,7 @@ export class FeedComponent implements OnInit {
     this.im =image;
     this.shared.setMessage(this.im);
   }
-  message = "ya raby";
+  message = "like this";
   constructor(private shared:SharedService) { }
   ngOnInit(): void {
 

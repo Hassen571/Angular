@@ -35,8 +35,8 @@
   width: 500px;
   overflow: auto;
 }
-mat-card{
-  border: 10px solid #156;
+.mat-card{
+  border: 10px solid rgb(99, 92, 197);
   padding: 5px;
 
 
@@ -69,5 +69,4 @@ button{
   background: #ccc;
   padding: 5px;
 }
-
 
