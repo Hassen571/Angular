@@ -7,14 +7,18 @@ import {SharedService} from '../shared/shared.service';
   styleUrls: ['./favoritelist.component.css']
 })
 export class FavoritelistComponent implements OnInit {
+  items : any ;
   message : any;
   constructor(private shared:SharedService) { }
 
   ngOnInit(): void {
     this.message=this.shared.getMessage();
+    this.items=this.shared.getItems();
   }
-  Delete(){
-    this.message="";
+  Delete(id){
+    this.shared.delateItems(id);
+    this.items=this.shared.getItems();
+    
   }
 
 }
