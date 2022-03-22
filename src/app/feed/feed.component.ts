@@ -20,6 +20,7 @@ export class FeedComponent implements OnInit {
   LikeButtonClick(image :Image){
     this.im =image;
     this.shared.setMessage(this.im);
+    this.shared.setItems(this.im)
   }
   message = "like this";
   constructor(private shared:SharedService) { }
